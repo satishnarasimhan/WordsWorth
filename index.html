@@ -9,7 +9,7 @@
 </head>
 <body>
     <!--<h1>Quote of the day</h1>-->
-    <body onload="startTime(); startDate()">
+    <body onload="fetchTime(); fetchDate()">
         <div class="container">
           <div id="date"></div>
           <div id="display"></div>
@@ -17,10 +17,12 @@
             <p id="quoteDisplay-el">Once your mind stretches to a new level, it never goes back to its original dimension</p>
           </div>
         </div>
+         
         <div id="b-nav">
             <ul>
                 <button onclick = "newQuote()">New Quote</button>
                 <script src = "javascript.js"></script>
+                <script src = "quotes.js"></script>
             </ul>
         </div>
 </body>
