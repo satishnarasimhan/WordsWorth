@@ -51,7 +51,8 @@ function fetchTime() {
     s = padZero(s);
     
     document.getElementById('display').innerHTML = h+":"+m+":"+s+ampm;
-    
+    // Added following time for setTimeout / refresh
+    let t = setTimeout(function(){fetchTime()},500);
 }
 
 function padZero(i) {
